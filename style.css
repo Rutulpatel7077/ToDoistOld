@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif ;
+  background: #70e1f5; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #70e1f5 , #ffd194); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #70e1f5 , #ffd194); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.center {
+  text-align: center;
+}
+.title {
+  margin: 80px;
+}
+.login-form div {
+  margin: 30px;
+}
+
+.login-form input {
+  padding: 15px;
+  border-radius: 5px;
+  border-color: #E91E63;
+  border-style: solid;
+  width: 180px;
+}
+
+.login-form input[type=submit] {
+  width: 210px;
+  background: #E91E63;
+  color: white;
+  font-weight: bold;
+}
