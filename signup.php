@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script type="text/javascript">   // This is a alert message for tha javascript
     function show_alert() {
     var msg = "Username and Password is mandatory";
     alert(msg);
@@ -8,7 +8,8 @@
 
 
 <?php
-	include("connection.php");
+	include("connection.php");     // connection to database server
+
 
 	if (isset($_POST['signup'])) {
 
@@ -16,10 +17,10 @@
 		$password = $_POST['password'];
 
 		if ($username == "")
-			echo '<script type="text/javascript"> show_alert(); </script>';
+			echo '<script type="text/javascript"> show_alert(); </script>';   // call to javascript alert message
 		elseif ($password == "")
 			echo '<script type="text/javascript"> show_alert(); </script>';
-		
+
 		else {
 
 			$query = "INSERT INTO users (username, password)
@@ -33,6 +34,8 @@
 		}
 	}
 ?>
+
+<!-- User interface in html language-->
 
 <!DOCTYPE html>
 <html>
