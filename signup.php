@@ -1,3 +1,12 @@
+<script type="text/javascript">
+    function show_alert() {
+    var msg = "Username and Password is mandatory";
+    alert(msg);
+    }
+</script>
+
+
+
 <?php
 	include("connection.php");
 
@@ -6,11 +15,11 @@
 		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-		if ($username == ""){
-			echo alert("Please Enter Name");}
-		elseif ($password == ""){
-			echo alert("Please Enter Password");
-		}
+		if ($username == "")
+			echo '<script type="text/javascript"> show_alert(); </script>';
+		elseif ($password == "")
+			echo '<script type="text/javascript"> show_alert(); </script>';
+		
 		else {
 
 			$query = "INSERT INTO users (username, password)
