@@ -24,7 +24,7 @@
 		else {
 
 			$query = "INSERT INTO users (username, password)
-			VALUES ('$username', '$password')";
+			VALUES ('$username','$password')";
 
 			if (mysqli_query($con, $query))
 				echo window.alert("Registerd successfully");
