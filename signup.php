@@ -11,7 +11,7 @@
 	include("connection.php");     // connection to database server
 
 
-	if (isset($_POST['users'])) {
+	if (isset($_POST['signup'])) {
 
 		$username = $_POST['username'];
 		$password = $_POST['password'];
@@ -54,7 +54,7 @@
 					<input name="password" type="password" placeholder="Password">
 				</div>
 				<div>
-					<input name="sign up" type="submit" value="Sign up">
+					<input name="signup" type="submit" value="Sign up">
 				</div>
 	<div>
 	</form>
