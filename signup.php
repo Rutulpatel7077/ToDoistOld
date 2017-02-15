@@ -11,7 +11,7 @@
 	include("connection.php");     // connection to database server
 
 
-	if (isset($_POST['signup'])) {
+	if (isset($_POST['users'])) {
 
 		$username = $_POST['username'];
 		$password = $_POST['password'];
